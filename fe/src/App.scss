@@ -1,0 +1,64 @@
+$tablet: 768px;
+
+@mixin mobile {
+  @media (max-width: #{$tablet}) {
+    @content;
+  }
+}
+
+.container {
+  margin: 100px 50px;
+  display: flex;
+  flex-direction: column;
+  @include mobile {
+    margin: 60px 10px;
+  }
+
+  .margin-top-20 {
+    margin-top: 20px;
+  }
+  .title {
+    font-size: 36px;
+    font-weight: 700;
+  }
+
+  .body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    .input-area {
+      display: flex;
+      // flex: 1;
+      width: 100%;
+      justify-content: center;
+      .input-box-pssm {
+        display: flex;
+        // flex: 1;
+        width: 60%;
+      }
+      .input-box-fasta {
+        display: flex;
+        // flex: 1;
+        width: 34%;
+      }
+    }
+
+    .result-container {
+      margin-top: 20px;
+      background-color: skyblue;
+      height: auto;
+      padding: 20px;
+      width: 600px;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+
+      .red {
+        color: red;
+      }
+      .green {
+        color: green;
+      }
+    }
+  }
+}
