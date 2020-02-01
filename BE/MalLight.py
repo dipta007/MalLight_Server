@@ -18,6 +18,7 @@ def get_mal():
     if len(fasta) < 2:
         fasta = data["fasta"].split(' ')
     protein = fasta[1]
+    print(protein)
     pssms = get_pssm(protein)
     res = get_all_results(pssms, protein, data['species'])
     return res
