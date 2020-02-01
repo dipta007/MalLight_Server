@@ -15,6 +15,8 @@ CORS(app)
 def get_mal():
     data = request.get_json()
     fasta = data["fasta"].split('\n')
+    if len(fasta) < 2:
+        fasta = data["fasta"].split(' ')
     protein = fasta[1]
     pssms = get_pssm(protein)
     res = get_all_results(pssms, protein, data['species'])
