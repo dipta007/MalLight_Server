@@ -10,7 +10,7 @@ const Footer = () => (
           <hr className="teal accent-3 mb-2 mt-0 d-inline-block mx-auto" style={{ width: "80px" }} />
           <h6>
             United City,
-            Madani Ave, <br /> <br />
+            Madani Avenue, <br /> <br />
             Dhaka 1212
           </h6>
         </div>
@@ -19,9 +19,7 @@ const Footer = () => (
           <h5 className="text-uppercase font-weight-bold">Teammates</h5>
           <hr className="teal accent-3 mb-2 mt-0 d-inline-block mx-auto" style={{ width: "80px" }} />
           <h5>
-            ⦿ Wakil Ahmad <br /> <br />
-            ⦿ Easin Arafat Roman <br /> <br />
-            ⦿ Shubhashis Roy Dipta 
+            ⦿ Team Mal-Light
           </h5>
         </div>
 
@@ -36,7 +34,7 @@ const Footer = () => (
       </div>
     </div>
     <div className="footer-copyright text-center text-black-50 py-3">
-      Copyright © Department of Computer Science and Engineering, United International University 2020
+      Copyright © Team Mal-Light, Department of Computer Science and Engineering, United International University 2020
     </div>
   </footer>
 );

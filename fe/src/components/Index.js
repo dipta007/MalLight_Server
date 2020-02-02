@@ -67,9 +67,12 @@ export default class Index extends Component {
     }).join("");
     result = `<h6>${result}</h6>`;
 
-    const indices = res.split('').map((p, i) => {
+    let indices = res.split('').map((p, i) => {
       if (res[i] === '1') return i;
     }).filter(p => p).join(' , ');
+    if (!res.length) {
+      indices = "No Malonylation site";
+    }
 
     return (
       <>
@@ -81,11 +84,11 @@ export default class Index extends Component {
           <Header toggle={this.toggleModal} />
           <div className="container-me">
             <h1>Mal-Light:</h1>
-            <h3>Enhancing Lysine Malonylation Sites Prediction Problem Relying Solely on Evolutionary-based Features.</h3>
+            <h3>Enhancing Lysine Malonylation Sites Prediction Problem Using Evolutionary-based Features.</h3>
             <hr />
             <div className="body">
               <p>Enter or copy/paste query protein in&nbsp;
-              <a href="http://prodata.swmed.edu/promals/info/fasta_format_file_example.htm">Fasta</a>
+              <a href="https://github.com/Wakiloo7/Mal-Light/blob/master/FASTA%20format.txt">Fasta</a>
               &nbsp;format
               (<span onClick={() => this.toggleModal('exampleModal')} className="like-anchor">Example</span>)
               </p>
@@ -115,7 +118,7 @@ export default class Index extends Component {
                   <FormControlLabel
                     value="mice"
                     control={<Radio color="primary" />}
-                    label="Mice"
+                    label="Mouse"
                     labelPlacement="end"
                   />
                   <FormControlLabel
@@ -129,7 +132,7 @@ export default class Index extends Component {
 
               <Button variant="contained" color="primary" className="margin-top-20" onClick={this.submit}>
                 Submit
-            </Button>
+              </Button>
 
               {!!protein.length && (
                 <>
@@ -140,6 +143,14 @@ export default class Index extends Component {
                   </div>
                 </>
               )}
+
+              <div style={{ textAlign: 'left', width: '100%', marginTop: '20px' }}>
+                <h4>References:</h4>
+                <ul>
+                  <li>IEEE Access (Submitted)</li>
+                </ul>
+              </div>
+
 
             </div>
           </div>
