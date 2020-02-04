@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import UIULogo from '../static/uiulogo.png';
 import {
   Collapse,

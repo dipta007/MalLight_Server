@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React, { Component } from 'react';
 import TextareaAutosize from '@material-ui/core/TextareaAutosize';
 import Button from '@material-ui/core/Button';
 import Radio from '@material-ui/core/Radio';
@@ -147,7 +147,9 @@ export default class Index extends Component {
               <div style={{ textAlign: 'left', width: '100%', marginTop: '20px' }}>
                 <h4>References:</h4>
                 <ul>
-                  <li>IEEE Access (Submitted)</li>
+                  <li>
+                  M. W. Ahmad, M. E. Arafat, G. Taherzadeh, A. Sharma, S. R. Dipta, A. Dehzangi, & S. Shatabda, “Mal-Light: Enhancing Lysine Malonylation Sites Prediction Problem Using Evolutionary-based Features”, (Submitted in IEEE Access).
+                  </li>
                 </ul>
               </div>
 

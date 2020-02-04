@@ -8,7 +8,7 @@ const PublicationsModal = ({
   <Modal isOpen={open} toggle={() => toggle('publicationsModal')}>
     <ModalHeader toggle={() => toggle('publicationsModal')}>Publications</ModalHeader>
     <ModalBody>
-      On Press
+    M. W. Ahmad, M. E. Arafat, G. Taherzadeh, A. Sharma, S. R. Dipta, A. Dehzangi, & S. Shatabda, “Mal-Light: Enhancing Lysine Malonylation Sites Prediction Problem Using Evolutionary-based Features”, (Submitted in IEEE Access).
     </ModalBody>
     <ModalFooter>
       <Button color="secondary" onClick={() => toggle('publicationsModal')}>Close</Button>
